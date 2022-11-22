@@ -1,0 +1,63 @@
+/* reset and remove inherited */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+
+label {
+    margin-top: 15px;
+}
+
+/* input {
+    outline: none;
+} */
+
+input:invalid {
+    outline: none;
+    border: 1px solid red;
+}
+
+input:valid {
+    outline: none;
+    border: 1px solid green;
+}
+
+select {
+    outline: none;
+    border: 1px solid red;
+}
+
+select:valid {
+    outline: none;
+    border: 1px solid green;
+}
+
+select {
+    margin-bottom: 0;
+}
+
+span {
+    padding: 0;
+    margin: 0;
+}
